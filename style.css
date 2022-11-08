@@ -1,7 +1,19 @@
 
-body {
+html, body {
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
+
+.portfolio-page__container {
+  margin: 0 auto; 
+}
+
+.portfolio-page__topics {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* navbar */
 
 .navbar {
   color: #000000;
@@ -37,12 +49,23 @@ body {
   border-bottom: 3px solid darkcyan;
 }
 
-.about-me {
+b {
+  font-size: 20px;
+}
+
+b:hover {
+  opacity: .5;
+  /* color: darkcyan; */
+  border-bottom: 3px solid darkcyan;
+}
+
+/* about me section */
+
+.portfolio-page__about-me {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  width: 100vw;
 }
 
 .about-me__avatar {
@@ -51,7 +74,39 @@ body {
   /* object-position: -10px -10px; */
 }
 
-.footer {
+/* projects section */
+
+.portfolio-page__projects-overview {
+  height: 100vh;
+}
+
+.project-overview__subheadlines {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.projects-overview__subheadline {
+  margin-right: 20px;
+}
+
+.projects-overview__subheadline:hover {
+  opacity: .5;
+  color: darkcyan;
+  border-bottom: 3px solid darkcyan;
+}
+
+.projects-overview__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card__image img {
+  width: 250px;
+}
+/* footer section */
+
+.portfolio-page__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,10 +120,6 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-}
-
-.media-links {
-  display: flex;
 }
 
 .media-links__link {
