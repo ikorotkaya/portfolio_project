@@ -59,7 +59,7 @@ margin-bottom: 50px;
 .portfolio-page__about-me {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color:antiquewhite ;
   /* height: 100vh; */
 }
@@ -68,6 +68,11 @@ margin-bottom: 50px;
   width: 500px;
   border-radius: 50%;
   padding-bottom: 70px;
+}
+
+.about-me__description {
+  margin-right: 100px;
+  width: 400px;
 }
 
 b {
@@ -91,9 +96,6 @@ b:hover {
 
 /* projects section */
 
-.portfolio-page__projects-overview {
-  /* height: 100vh; */
-}
 
 .project-overview__subheadlines {
   display: flex;
@@ -114,6 +116,7 @@ b:hover {
 .projects-overview__gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-card__image img {
@@ -122,7 +125,16 @@ b:hover {
 
 /* photography section */
 
+.gallery__photos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
 
+.gallery__photo {
+  width: 250px;
+
+}
 
 /* footer section */
 
