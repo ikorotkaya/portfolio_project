@@ -138,14 +138,21 @@ b:hover {
 
 /* photography section */
 
+
+.photography__headline {
+  margin-bottom: 20px;
+}
+
 .gallery__photos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  row-gap: 20px;
 }
 
 .gallery__photo {
-  width: 250px;
+  width: 380px;
+  border-radius: 10px;
 }
 
 /* footer section */
