@@ -1,11 +1,10 @@
-
 html, body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
 .portfolio-page__container {
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .portfolio-page__topics {
@@ -14,7 +13,7 @@ html, body {
 }
 
 .portfolio-page__topic {
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* navbar */
@@ -60,7 +59,7 @@ margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:antiquewhite ;
+  background-color: antiquewhite;
   /* height: 100vh; */
 }
 
@@ -90,7 +89,7 @@ b:hover {
   text-align: left;
 }
 
-.intro__description{
+.intro__description {
   text-align: left;
 }
 
@@ -119,21 +118,34 @@ b:hover {
   justify-content: center;
 }
 
+.gallery__project-card {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .project-card__image img {
-  width: 250px;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card__image:hover img {
+  transform: scale(1.03);
+  transition: all .3s;  
 }
 
 /* photography section */
 
 .gallery__photos {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery__photo {
   width: 250px;
-
 }
 
 /* footer section */
@@ -147,4 +159,4 @@ justify-content: center;
 
 .footer__logo {
   font-size: 12px;
-} 
+}
