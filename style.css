@@ -13,6 +13,10 @@ html, body {
   max-width: 1200px;
 }
 
+.portfolio-page__topic {
+margin-bottom: 50px;
+}
+
 /* navbar */
 
 .navbar {
@@ -49,8 +53,25 @@ html, body {
   border-bottom: 3px solid darkcyan;
 }
 
+
+/* about me section */
+
+.portfolio-page__about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:antiquewhite ;
+  /* height: 100vh; */
+}
+
+.about-me__avatar {
+  width: 500px;
+  border-radius: 50%;
+  padding-bottom: 70px;
+}
+
 b {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 b:hover {
@@ -59,25 +80,19 @@ b:hover {
   border-bottom: 3px solid darkcyan;
 }
 
-/* about me section */
-
-.portfolio-page__about-me {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
+.intro__main-text {
+  font-size: 20px;
+  text-align: left;
 }
 
-.about-me__avatar {
-  width: 500px;
-  border-radius: 50%;
-  /* object-position: -10px -10px; */
+.intro__description{
+  text-align: left;
 }
 
 /* projects section */
 
 .portfolio-page__projects-overview {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .project-overview__subheadlines {
@@ -104,24 +119,20 @@ b:hover {
 .project-card__image img {
   width: 250px;
 }
+
+/* photography section */
+
+
+
 /* footer section */
 
 .portfolio-page__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 0;
 }
 
 .footer__logo {
   font-size: 12px;
 } 
-
-.footer__media-links {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.media-links__link {
-  padding: 5px 20px;
-}
