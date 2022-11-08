@@ -5,11 +5,11 @@ html, body {
 
 .portfolio-page__container {
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .portfolio-page__topics {
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 .portfolio-page__topic {
