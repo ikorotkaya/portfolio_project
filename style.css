@@ -18,8 +18,8 @@ body {
 }
 
 .navbar__logo {
-  font-size: 20px;
-  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
   font-weight: bold;
 }
 
@@ -27,13 +27,28 @@ body {
   font-size: 16px;
   color: #3E4C59;
   text-decoration: none;
-  padding: 0px 20px;
+  padding: 0px 5px;
   /* border: solid rgb(219, 218, 218) 1px; */
 }
 
 .navbar__link:hover {
-  opacity: .7;
+  opacity: .5;
   color: darkcyan;
+  border-bottom: 3px solid darkcyan;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-me__avatar {
+  width: 500px;
+  border-radius: 50%;
+  /* object-position: -10px -10px; */
 }
 
 .footer {
