@@ -1,0 +1,104 @@
+html, body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.contact-page__container {
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.contact-page__contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-top: 50px;
+}
+.contact-form__block-one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.contact-form__block-two {
+  grid-column: 1;
+  grid-row: 2 / 3;
+  margin-top: 0;
+}
+.contact-form__block-three {
+  grid-column: 1;
+  grid-row: 3 / 4;
+}
+.contact-form__block-four {
+  grid-column: 1;
+  grid-row: 4 / 5;
+}
+.contact-form__block-five {
+  grid-column: 2;
+  grid-row: 3 / 4;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contact-form__block-six {
+  grid-column: 2;
+  grid-row: 4 / 6;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.block-one__greeting {
+  margin-bottom: 0;
+}
+
+.block-two__subheadline {
+  margin: 0;
+}
+
+.email__email {
+  text-decoration: none;
+  color: black;
+}
+
+.media-link__link {
+  width: 30px;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid black;
+  
+}
+
+input:hover {
+  border: 0;
+  border-bottom: 2px solid darkcyan;
+  
+}
+
+
+
+.message-input__message {
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+
+.message-input__message:hover {
+  border: 0;
+  border-bottom: 2px solid darkcyan;
+
+}
+
+.message-input__send-button {
+  border: 0;
+  background-color: white;
+}
+
+.message-input__send-button:hover {
+  color: darkcyan;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+  position: absolute;
+  cursor: pointer;
+
+}

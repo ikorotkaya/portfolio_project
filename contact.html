@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
+
+    <div class="contact-page">
+      <div class="contact-page__container">
+
+        <div class="contact-page__contact-form">
+          <div class="contact-form__block-one">
+            <h2 class="block-one__greeting">Hey There!</h1>
+          </div>
+
+          <div class="contact-form__block-two">
+            <h4 class="block-two__subheadline">ask me anything</h4>
+          </div>
+
+          <div class="contact-form__block-three">
+            <a href="mailto: irina@korotkaya.com" class="email__email">irina@korotkaya.com</a>
+          </div>
+
+          <div class="contact-form__block-four">
+            <div class="block-four__media-links">
+              <a href="https://github.com/ikorotkaya"> <img
+                  src="links/icons8-github-48.png" alt="github link"
+                  class="media-link__link"></a>
+              <a href="https://www.instagram.com/irinkakorotkaya"> <img
+                  src="links/icons8-instagram-48.png" alt="instagram link"
+                  class="media-link__link"></a>
+              <a href="https://www.linkedin.com/in/irinakorotkaya/"> <img
+                  src="links/icons8-linkedin-48.png" alt="linkedin link"
+                  class="media-link__link"></a>
+
+            </div>
+
+          </div>
+          <div class="contact-form__block-five">
+            <div class="block-five__name-email-inputs">
+              <form action="/action_page.php">
+                <input type="text" id="first-name" name="first-name"
+                  placeholder="Name *" class="name-email-inputs__first-name">
+                <input type="text" id="last-name" name="last-name"
+                  placeholder="E-mail *" class="name-email-inputs__email">
+              </form>
+
+            </div>
+          </div>
+
+          <div class="contact-form__block-six">
+            <div class="block-six__message-input">
+              <form action="/action_page.php">
+                <label for="message"></label>
+                <input type="text" id="message" name="message"
+                  placeholder="Message" class="message-input__message"><br><br>
+                <input type="submit" value="Send"
+                  class="message-input__send-button">
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
