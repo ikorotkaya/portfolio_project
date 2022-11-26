@@ -1,6 +1,6 @@
 html, body {
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 .contact-page__container {
@@ -17,32 +17,31 @@ html, body {
   grid-auto-rows: minmax(100px, auto);
   margin-top: 50px;
 }
+
 .contact-form__block-one {
   grid-column: 1 / 2;
   grid-row: 1;
 }
+
 .contact-form__block-two {
   grid-column: 1;
   grid-row: 2 / 3;
   margin-top: 0;
 }
+
 .contact-form__block-three {
   grid-column: 1;
   grid-row: 3 / 4;
 }
+
 .contact-form__block-four {
   grid-column: 1;
   grid-row: 4 / 5;
 }
+
 .contact-form__block-five {
   grid-column: 2;
-  grid-row: 3 / 4;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.contact-form__block-six {
-  grid-column: 2;
-  grid-row: 4 / 6;
+  grid-row: 3 / 6;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -64,41 +63,50 @@ html, body {
   width: 30px;
 }
 
+.block-five__inputs {
+  width: 300px;
+}
+
+.inputs__name-email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 input {
   border: 0;
   border-bottom: 1px solid black;
-  
 }
 
 input:hover {
   border: 0;
-  border-bottom: 2px solid darkcyan;
-  
+  border-bottom: 1px solid darkcyan;
+
 }
 
+.inputs__message {
+  margin-bottom: 20px;
+}
 
-
-.message-input__message {
+.inputs__input-message {
   padding-bottom: 50px;
-  border-bottom: 1px solid black;
+  width: 100%;
 }
 
-.message-input__message:hover {
-  border: 0;
-  border-bottom: 2px solid darkcyan;
-
+.inputs__submit {
+  display: flex;
+  justify-content: center;
 }
 
-.message-input__send-button {
+.inputs__send-button {
   border: 0;
   background-color: white;
 }
 
-.message-input__send-button:hover {
+.inputs__send-button:hover {
   color: darkcyan;
-  border: 1px solid darkcyan;
-  color: darkcyan;
+  border-bottom: 1px solid darkcyan;
   position: absolute;
   cursor: pointer;
-
+  font-size: 14px;
 }

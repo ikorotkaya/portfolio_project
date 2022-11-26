@@ -49,26 +49,45 @@
 
           </div>
           <div class="contact-form__block-five">
-            <div class="block-five__name-email-inputs">
+            <div class="block-five__inputs">
               <form action="/action_page.php">
-                <input type="text" id="first-name" name="first-name"
-                  placeholder="Name *" class="name-email-inputs__first-name">
-                <input type="text" id="last-name" name="last-name"
-                  placeholder="E-mail *" class="name-email-inputs__email">
+
+                <div class="inputs__name-email">
+                  <input 
+                    type="text" 
+                    id="first-name" 
+                    name="first-name"
+                    placeholder="Name *" 
+                    class="inputs__first-name">
+                  
+                    <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="E-mail *" 
+                    class="inputs__email">
+                </div>
+
+                <div class="inputs__message">
+                  <label for="message"></label>
+                  <input 
+                    type="text" 
+                    id="message" 
+                    name="message"
+                    placeholder="Message" 
+                    class="inputs__input-message">
+                </div>
+                
+                <div class="inputs__submit">
+                  <input
+                    type="submit"
+                    value="Send"
+                    class="inputs__send-button">
+                </div>
               </form>
 
             </div>
           </div>
-
-          <div class="contact-form__block-six">
-            <div class="block-six__message-input">
-              <form action="/action_page.php">
-                <label for="message"></label>
-                <input type="text" id="message" name="message"
-                  placeholder="Message" class="message-input__message"><br><br>
-                <input type="submit" value="Send"
-                  class="message-input__send-button">
-              </form>
 
             </div>
           </div>
