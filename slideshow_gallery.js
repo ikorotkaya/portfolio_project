@@ -27,16 +27,16 @@ const updateNavState = () => {
     prevButton.disabled = false;
   }
 
-  if(containerWidth >= remainingGalleryWidth()) {
+  if(containerWidth >= remainingScrollRight(currentPictureIndex)) {
     nextButton.disabled = true;
   } else {
     nextButton.disabled = false;
   }
 }
 
-const remainingGalleryWidth = () => {
+const remainingScrollRight = (pictureIndex) => {
   let result = 0;
-  for (let i = currentPictureIndex; i < pictureCount; i++) {
+  for (let i = pictureIndex; i < pictureCount; i++) {
     result += pictureWidths[i];
 
     if (i !== pictureCount - 1) {
@@ -53,10 +53,10 @@ nextButton.addEventListener("click", (e) => {
   let shiftWidth;
   const lastPictureWidth = pictureWidths[pictureCount - 1];
 
-  if(remainingGalleryWidth() - containerWidth > lastPictureWidth) {
+  if(remainingScrollRight(currentPictureIndex) - containerWidth > lastPictureWidth) {
     shiftWidth = pictureWidths[currentPictureIndex] + gap;
   } else {
-    shiftWidth = remainingGalleryWidth() - containerWidth;
+    shiftWidth = remainingScrollRight(currentPictureIndex) - containerWidth;
   }
   
   $picturesContainer.scrollLeft += shiftWidth;
@@ -67,13 +67,17 @@ nextButton.addEventListener("click", (e) => {
 });
 
 prevButton.addEventListener("click", (e) => {
-  const shiftWidth = pictureWidths[currentPictureIndex - 1] + gap;
+  let shiftWidth;
   
-  if (shiftWidth > 0) {
-    $picturesContainer.scrollLeft -= shiftWidth;
-    
-    currentPictureIndex -= 1;
+  if(containerWidth > remainingScrollRight(currentPictureIndex)) {
+    shiftWidth = remainingScrollRight(currentPictureIndex - 1) - containerWidth;
+  } else {
+    shiftWidth = pictureWidths[currentPictureIndex - 1] + gap;
   }
+
+  $picturesContainer.scrollLeft -= shiftWidth;
+    
+  currentPictureIndex -= 1;
 
   updateNavState();
 });
