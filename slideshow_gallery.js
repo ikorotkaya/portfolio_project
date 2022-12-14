@@ -36,6 +36,7 @@ const updateNavState = () => {
 
 const remainingScrollRight = (pictureIndex) => {
   let result = 0;
+  
   for (let i = pictureIndex; i < pictureCount; i++) {
     result += pictureWidths[i];
 
